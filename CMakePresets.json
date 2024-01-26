@@ -1,0 +1,26 @@
+{
+  "version": 6,
+  "configurePresets": [
+    {
+      "name": "default",
+      "generator": "Ninja",
+      "cacheVariables": {
+        "CMAKE_TOOLCHAIN_FILE": "/home/quinten/runtime-linux-1/runtimecore/cmake/toolchains/linux_x64.cmake",
+	"ZLIB_LIBRARY": {
+          "type": "FILEPATH",
+          "value": "/home/quinten/runtime-linux-1/output/linux_x64_debug/staticlib/libzlib-ng.a"
+        },
+        "ZLIB_INCLUDE_DIR": {
+          "type": "PATH",
+          "value": "/home/quinten/runtime-linux-1/3rdparty/zlib-ng"
+        }
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "default",
+      "configurePreset": "default"
+    }
+  ]
+}
